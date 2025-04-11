@@ -1,6 +1,5 @@
 #!/bin/bash
 # Installer UDP-Custom by Kang Hory
-# recode https://github.com/Haris131/UDP-Custom
 # Usage: ./install-udp.sh "80,443"
 
 cd
@@ -68,4 +67,10 @@ systemctl enable udp-custom
 
 echo "Installation complete."
 read -p "Reboot now? [y/n]: " yn
-[[ "$yn" == "y" || "$yn" == "Y" ]] && reboot
+if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
+    reboot
+else
+    sleep 1
+    clear
+    menu_ssh_udp
+fi
