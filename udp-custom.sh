@@ -70,7 +70,9 @@ read -p "Reboot now? [y/n]: " yn
 if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
     reboot
 else
-    sleep 1
+    echo ""
+    read -p "Tekan Enter untuk kembali ke menu..." enter
     clear
-    /usr/bin/menun.ssh/menu_udp_custom  # <- sesuaikan dengan lokasi sebenarnya
+    source /usr/bin/menun-ssh.sh
+    menu_udp_custom
 fi
