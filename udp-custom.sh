@@ -72,5 +72,5 @@ if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
 else
     sleep 1
     clear
-    menu_udp_custom
+    /usr/bin/menun.ssh/menu_udp_custom  # <- sesuaikan dengan lokasi sebenarnya
 fi
