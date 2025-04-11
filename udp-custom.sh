@@ -72,5 +72,5 @@ if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
 else
     sleep 1
     clear
-    menu_ssh_udp
+    menu_udp_custom
 fi
