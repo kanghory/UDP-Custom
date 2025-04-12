@@ -1,5 +1,6 @@
 #!/bin/bash
 # Installer UDP-Custom by Kang Hory
+# recode https://github.com/Haris131/UDP-Custom.git
 # Usage: ./install-udp.sh "80,443"
 
 cd
