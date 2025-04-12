@@ -66,3 +66,14 @@ systemctl start udp-custom
 systemctl enable udp-custom
 
 echo "Installation complete, jika udp belum konek silahkan reboot vps kalian"
+echo ""
+read -p "Reboot now? [y/n]: " yn
+if [[ "$yn" =~ ^[Yy]$ ]]; then
+    reboot
+else
+    echo ""
+    echo "Installasi selesai. Tekan Ctrl + C untuk keluar atau gunakan perintah menu secara manual."
+    sleep 1
+    tail -f /dev/null
+fi
+
