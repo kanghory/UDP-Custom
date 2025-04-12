@@ -65,4 +65,4 @@ echo "Starting and enabling udp-custom service..."
 systemctl start udp-custom
 systemctl enable udp-custom
 
-echo "Installation complete."
+echo "Installation complete, jika udp belum konek silahkan reboot vps kalian"
