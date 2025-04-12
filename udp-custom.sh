@@ -66,13 +66,3 @@ systemctl start udp-custom
 systemctl enable udp-custom
 
 echo "Installation complete."
-read -p "Reboot now? [y/n]: " yn
-if [[ "$yn" == "y" || "$yn" == "Y" ]]; then
-    reboot
-else
-    echo ""
-    read -p "Tekan Enter untuk kembali ke menu..." enter
-    clear
-    source /usr/bin/menun-ssh.sh
-    menu_udp_custom
-fi
