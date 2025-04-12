@@ -72,8 +72,8 @@ if [[ "$yn" =~ ^[Yy]$ ]]; then
     reboot
 else
     echo ""
-    echo "Installasi selesai. Tekan Ctrl + C untuk keluar atau gunakan perintah menu secara manual."
-    sleep 1
-    tail -f /dev/null
+    echo "Instalasi selesai. Silakan reboot manual lewat menu reboot di menu awal vps jika udp custom belum konek."
+    exit 0
 fi
+
 
